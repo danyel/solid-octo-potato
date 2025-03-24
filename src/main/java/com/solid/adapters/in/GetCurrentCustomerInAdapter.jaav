@@ -1,0 +1,15 @@
+package com.solid.adapters.out;
+
+import com.solid.application.model.Customer;
+import com.solid.application.port.in.GetCurrentCustomerInPort;
+import org.springframework.stereotype.Service;
+
+import java.util.UUID;
+
+@Service
+public class GetCurrentCustomerInAdapter implements GetCurrentCustomerInPort {
+    @Override
+    public Customer getCurrentCustomer() {
+        return new Customer(UUID.randomUUID().toString(), "John", "Doe");
+    }
+}
