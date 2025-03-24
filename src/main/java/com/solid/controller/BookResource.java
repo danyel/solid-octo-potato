@@ -1,6 +1,6 @@
 package com.solid.controller;
 
-import com.solid.model.bookRecommendation;
+import com.solid.application.model.bookRecommendation;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
